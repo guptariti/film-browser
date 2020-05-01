@@ -6,12 +6,29 @@ import {remove} from '../actions';
 const Movie = ({mov}) => {
     const dispatch = useDispatch();
 
+    const styles = {
+        "display":"flex",
+        "justify-content": "space-evenly",
+        "flex-direction": "column",
+        "text-align": "center",
+        "align-items": "center",
+        "margin": "20px",
+        "font-family":"Futura,Trebuchet MS,Arial,sans-serif",
+        "-moz-box-shadow": "2px 2px 6px 1px #000000",
+        "-webkit-box-shadow": "2px 2px 6px 1px #000000",
+        "box-shadow":         "2px 2px 6px 1px #000000",
+        "border-radius": "25px",
+        "padding":"10px",
+        "height": "400px",
+        "cursor": "pointer"
+    }
+
     const removeMovie = () => {
         dispatch(remove(mov));
     }
 
     return (
-        <div className="mvie">
+        <div style={styles}>
             <h3>{mov.Title} ({mov.Year})</h3>
             <img
             width="40%"
