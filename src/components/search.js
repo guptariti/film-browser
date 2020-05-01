@@ -10,7 +10,7 @@ const Search = ({store}) => {
     const API_KEY = "2d3e6cc6";
 
     const submitSearch = () => {
-        axios.get('http://www.omdbapi.com/?s=' + userSearch + "&apikey=" + API_KEY)
+        axios.get('https://www.omdbapi.com/?s=' + userSearch + "&apikey=" + API_KEY)
             .then(res => {
                 if (res.data.Response ==="False") {
                     alert("No matches found!");
