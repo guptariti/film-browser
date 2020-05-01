@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './search.css';
+import '../css/search.css';
 import {useSelector, useDispatch} from 'react-redux';
 import {fetch} from '../actions';
 import axios from 'axios';

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Row from './row.js';
 import Grid from '@material-ui/core/Grid';
-import './search.css';
+import '../css/search.css';
 import {useSelector, useDispatch} from 'react-redux';
 
 

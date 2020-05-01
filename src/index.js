@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './components/search.css';
+import './css/search.css';
 import App from './App.js'
 import {createStore} from 'redux';
 import allReducers from './reducers'
