@@ -56,6 +56,7 @@
 
 .mvie {
     display:flex;
+    border: 3px solid green;
     justify-content: space-evenly;
     flex-direction: column;
     text-align: center;
