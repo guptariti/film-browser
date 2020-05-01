@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Search from './components/search.js'
 import Grid from './components/grid.js'
-import './components/search.css';
+import './css/search.css';
 
 
 function App({store}) {
