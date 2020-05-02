@@ -1,3 +1,17 @@
+This project is a simple movie searcher. A user may search the name of any movie they like and will get list of grid results with the corresponding movie title and movie year. Each movie comes with a delete button, which removes the movie from the view. 
+
+Tech Stack/Relevant Dependencies:
+  - React.js/Redux
+  - OMDB API
+  - Material UI (Grid Layout)
+  - Axios (HTTP Requests)
+  - Redux Dev Tools
+ 
+You may view the running application at: https://film-browser.herokuapp.com/
+
+Have fun!
+  
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
