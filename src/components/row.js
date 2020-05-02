@@ -2,8 +2,8 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Movie from './movie.js';
 
+//maps the elemements in each row into a Movie component
 const Row = ({rows}) => {
-    const parts = 3;
     return (
         <React.Fragment>
             {rows.map((element, i) => 

@@ -1,3 +1,6 @@
+//represents the movie list reducer
+//if 'FETCH' => update the redux state to the given returned API data
+//if 'REMOVE' => update the redux state to remove the given movie
 const movieListReducer = (state=[], action) => {
     switch(action.type) {
         case 'FETCH':

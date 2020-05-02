@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react';
 import Row from './row.js';
 import Grid from '@material-ui/core/Grid';
 import '../css/search.css';
-import {useSelector, useDispatch} from 'react-redux';
+import {useSelector} from 'react-redux';
 
 
 const MoviesGrid = () => {
     const movieList = useSelector(state => state.movieList);
-    const parts = 3;
-    console.log(movieList);
+    const parts = 3; //represents the number of movies to be displayed in the grid
 
 
+    //divides the list of movies from API into two dimensional array
+    //representing the grid layout
     const divide = (arr) => {
             console.log(arr);
           let rows = Math.floor(arr.length/parts);
@@ -40,7 +40,7 @@ const MoviesGrid = () => {
 
       
 
-   
+        //maps each inner array in the 2d array to a row component
       return (
           movieList.length > 0 ?  
           (
